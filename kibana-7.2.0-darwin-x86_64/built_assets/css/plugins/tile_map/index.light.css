@@ -1,0 +1,13 @@
+.tilemap {
+  margin-bottom: 6px;
+  border: 1px solid #D3DAE6;
+  position: relative; }
+
+/**
+* 1. Visualizations have some padding by default but tilemaps look nice flush against the edge to maximize viewing
+* space.
+*/
+.tile_map {
+  padding: 0;
+  /* 1. */ }
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImJ1aWxkL2tpYmFuYS9zcmMvc3JjL2xlZ2FjeS9jb3JlX3BsdWdpbnMvdGlsZV9tYXAvcHVibGljL190aWxlX21hcC5zY3NzIiwiYnVpbGQvbm9kZV9tb2R1bGVzL0BlbGFzdGljL2V1aS9zcmMvZ2xvYmFsX3N0eWxpbmcvdmFyaWFibGVzL19jb2xvcnMuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFDQTtFQUNFLG1CQUFrQjtFQUNsQiwwQkNhMEI7RURaMUIsbUJBQWtCLEVBQ25COztBQUVEOzs7RUFHRTtBQUVGO0VBQ0UsV0FBVTtFQUFFLFFBQVEsRUFDckIiLCJmaWxlIjoiYnVpbGQva2liYW5hL3NyYy9sZWdhY3kvY29yZV9wbHVnaW5zL3RpbGVfbWFwL3B1YmxpYy9pbmRleC5zY3NzIn0= */

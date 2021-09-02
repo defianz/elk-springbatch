@@ -1,0 +1,17 @@
+"use strict";
+/*
+ * Copyright Elasticsearch B.V. and/or licensed to Elasticsearch B.V. under one
+ * or more contributor license agreements. Licensed under the Elastic License;
+ * you may not use this file except in compliance with the Elastic License.
+ */
+Object.defineProperty(exports, "__esModule", { value: true });
+function setupRoute(server) {
+    server.route({
+        method: 'get',
+        path: '/api/code/setup',
+        handler(req, h) {
+            return h.response('').code(200);
+        },
+    });
+}
+exports.setupRoute = setupRoute;

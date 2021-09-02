@@ -1,0 +1,1 @@
+{"version":3,"file":"dev_config.d.ts","sourceRoot":"","sources":["../../../../src/core/server/dev/dev_config.ts"],"names":[],"mappings":"AAmBA,OAAO,EAAU,MAAM,EAAE,MAAM,oBAAoB,CAAC;AAEpD,eAAO,MAAM,MAAM;;;;;CAOlB,CAAC;AAEF,oBAAY,aAAa,GAAG,MAAM,CAAC,OAAO,MAAM,CAAC,MAAM,CAAC,CAAC;AAEzD,qBAAa,SAAS;IACb,uBAAuB,EAAE,MAAM,CAAC;IAEvC;;OAEG;gBACS,SAAS,EAAE,aAAa;CAGrC"}

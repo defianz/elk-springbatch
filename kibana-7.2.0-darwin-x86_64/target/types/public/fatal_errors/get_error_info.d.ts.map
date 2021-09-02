@@ -1,0 +1,1 @@
+{"version":3,"file":"get_error_info.d.ts","sourceRoot":"","sources":["../../../../src/core/public/fatal_errors/get_error_info.ts"],"names":[],"mappings":"AAiEA;;;GAGG;AACH,wBAAgB,YAAY,CAAC,KAAK,EAAE,GAAG,EAAE,MAAM,CAAC,EAAE,MAAM,GAAG,cAAc,CAMxE;AAED;;;;KAIK;AACL,MAAM,WAAW,cAAc;IAC7B,OAAO,EAAE,MAAM,CAAC;IAChB,KAAK,EAAE,MAAM,GAAG,SAAS,CAAC;CAC3B"}

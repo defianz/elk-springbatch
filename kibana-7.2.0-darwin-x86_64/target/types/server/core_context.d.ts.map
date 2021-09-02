@@ -1,0 +1,1 @@
+{"version":3,"file":"core_context.d.ts","sourceRoot":"","sources":["../../../src/core/server/core_context.ts"],"names":[],"mappings":"AAmBA,OAAO,EAAE,aAAa,EAAE,GAAG,EAAE,MAAM,UAAU,CAAC;AAC9C,OAAO,EAAE,aAAa,EAAE,MAAM,WAAW,CAAC;AAE1C;;;;GAIG;AACH,MAAM,WAAW,WAAW;IAC1B,GAAG,EAAE,GAAG,CAAC;IACT,aAAa,EAAE,aAAa,CAAC;IAC7B,MAAM,EAAE,aAAa,CAAC;CACvB"}

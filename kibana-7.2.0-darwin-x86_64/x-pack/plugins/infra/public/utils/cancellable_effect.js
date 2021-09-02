@@ -1,0 +1,24 @@
+"use strict";
+/*
+ * Copyright Elasticsearch B.V. and/or licensed to Elasticsearch B.V. under one
+ * or more contributor license agreements. Licensed under the Elastic License;
+ * you may not use this file except in compliance with the Elastic License.
+ */
+Object.defineProperty(exports, "__esModule", { value: true });
+const react_1 = require("react");
+exports.createCancellationSignal = () => {
+    const cancellationSignal = {
+        isCancelled: false,
+        cancel: () => {
+            cancellationSignal.isCancelled = true;
+        },
+    };
+    return cancellationSignal;
+};
+exports.useCancellableEffect = (effect, deps) => {
+    react_1.useEffect(() => {
+        const cancellationSignal = exports.createCancellationSignal();
+        effect(() => cancellationSignal.isCancelled);
+        return cancellationSignal.cancel;
+    }, deps);
+};

@@ -1,0 +1,48 @@
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.generateCSPNonce = generateCSPNonce;
+exports.createCSPRuleString = createCSPRuleString;
+exports.DEFAULT_CSP_RULES = void 0;
+
+var _crypto = require("crypto");
+
+var _util = require("util");
+
+/*
+ * Licensed to Elasticsearch B.V. under one or more contributor
+ * license agreements. See the NOTICE file distributed with
+ * this work for additional information regarding copyright
+ * ownership. Elasticsearch B.V. licenses this file to you under
+ * the Apache License, Version 2.0 (the "License"); you may
+ * not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *    http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ */
+const randomBytesAsync = (0, _util.promisify)(_crypto.randomBytes);
+const DEFAULT_CSP_RULES = Object.freeze([`script-src 'unsafe-eval' 'nonce-{nonce}'`, 'worker-src blob:', 'child-src blob:']);
+exports.DEFAULT_CSP_RULES = DEFAULT_CSP_RULES;
+
+async function generateCSPNonce() {
+  return (await randomBytesAsync(12)).toString('base64');
+}
+
+function createCSPRuleString(rules, nonce) {
+  let ruleString = rules.join('; ');
+
+  if (nonce) {
+    ruleString = ruleString.replace(/\{nonce\}/g, nonce);
+  }
+
+  return ruleString;
+}
